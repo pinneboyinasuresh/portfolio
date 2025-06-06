@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pinneboyina Suresh - Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      overflow-x: hidden;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      position: relative;
+    }
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      margin-bottom: 10px;
+    }
+    .resume-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .resume-btn:hover {
+      background-color: #2980b9;
+    }
+    nav {
+      background-color: #34495e;
+      text-align: center;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      text-decoration: underline;
+      color: #1abc9c;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+      margin-top: 40px;
+      color: #2c3e50;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li {
+      margin-bottom: 8px;
+    }
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    input, textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      width: 100%;
+    }
+    button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2c3e50;
+      color: white;
+      margin-top: 40px;
+    }
+    footer a {
+      color: #ecf0f1;
+      margin: 0 10px;
+    }
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+      .profile-img {
+        width: 90px;
+        height: 90px;
+      }
+    }
+
+    /* === Spark Light Effect (Blue Color) === */
+    .spark {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      pointer-events: none;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(52,152,219,0.9) 0%, rgba(52,152,219,0) 80%);
+      box-shadow: 0 0 15px rgba(52, 152, 219, 0.6);
+      animation: fadeOut 0.6s forwards;
+      z-index: 9999;
+    }
+
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+        transform: scale(2);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="photo.jpg" alt="Profile Photo" class="profile-img">
+    <h1>Pinneboyina Suresh</h1>
+    <p>Aspiring Data Analyst | Vijayawada</p>
+    <address>
+      📧 <a href="mailto:22na1a0554.lingayas@limat.edu.in" style="color:#ecf0f1;">22na1a0554.lingayas@limat.edu.in</a> | 
+      📞 <a href="tel:+919346419211" style="color:#ecf0f1;">+91 93464 19211</a>
+    </address>
+    <a class="resume-btn" href="Resume.pdf" download>Download Resume</a>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>As an enthusiastic aspiring Data Analyst, I am driven by a passion for transforming complex data into actionable insights that solve real-world challenges.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>Java</li>
+        <li>HTML & CSS</li>
+        <li>Python</li>
+        <li>C++</li>
+      </ul>
+
+      <h2>Soft Skills</h2>
+      <ul>
+        <li>Effective Communication</li>
+        <li>Team Collaboration</li>
+        <li>Analytical Problem Solving</li>
+        <li>Time Management</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <p><strong>Fake News Detection System</strong><br>
+        Developed a Python-based system using NLP and machine learning to identify misleading content.<br>
+        <a href="https://colab.research.google.com/drive/1n7ZEraoNDZlJulGNhsAzAdUmyf9H6E6f?usp=sharing" target="_blank">View Project</a>
+      </p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <p>B.Tech in Computer Science<br>
+      Lingayas Institute of Management and Technology (2022–2026)</p>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <ul>
+        <li>EDX – Programming in Java Fundamentals</li>
+        <li>NPTEL – Internet of Things (IoT)</li>
+        <li>Prompt Engineering & ChatGPT – ExcelR</li>
+        <li>Data Science Foundations - Great Learning</li>
+        <li>Python Intermediate & Developer – SoloLearn</li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <p>Currently exploring internship opportunities in software development, web technologies, and data science domains to gain hands-on industry experience.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Connect with me: 
+      <a href="mailto:22na1a0554.lingayas@limat.edu.in">Email</a> | 
+      <a href="https://www.linkedin.com/in/suresh-pinneboyina-86933533b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a> | 
+      <a href="https://github.com/YOURGITHUBUSERNAME" target="_blank">GitHub</a> | 
+      <a href="resume.pdf" download>Resume</a>
+    </p>
+    <p>&copy; 2025 Pinneboyina Suresh</p>
+  </footer>
+
+  <!-- Spark Cursor Script -->
+  <script>
+    document.addEventListener('mousemove', function(e) {
+      const spark = document.createElement('div');
+      spark.className = 'spark';
+      spark.style.left = `${e.pageX}px`;
+      spark.style.top = `${e.pageY}px`;
+      document.body.appendChild(spark);
+      setTimeout(() => spark.remove(), 600);
+    });
+  </script>
+
+</body>
+</html>
